@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fdf8f5;
+  color: #3b1e19;
+}
+
+/* Barra Superior */
+.top-bar {
+  background-color: #d89b75;
+  color: #3b1e19;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #3b1e19;
+  padding: 16px 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #d89b75;
+}
+
+.logo-texto {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: #d89b75;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.sub-brand {
+  color: #fdf8f5;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+}
+
+/* Banner Hero */
+.hero-section {
+  background: linear-gradient(rgba(59, 30, 25, 0.75), rgba(59, 30, 25, 0.75)), #3b1e19;
+  color: #fdf8f5;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #d89b75;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: #d89b75;
+  color: #3b1e19;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #c4845d;
+  color: #fff;
+}
+
+/* Layout Principal */
+.main-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* Títulos */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  color: #3b1e19;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #d89b75;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid de Produtos */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card-produto {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(59, 30, 25, 0.05);
+  border: 1px solid #f2e3d5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(59, 30, 25, 0.1);
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #3b1e19;
+  color: #d89b75;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.badge-popular {
+  background-color: #d89b75;
+  color: #3b1e19;
+}
+
+.imagem-box {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0 16px;
+}
+
+.card-produto h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: #3b1e19;
+  margin-bottom: 8px;
+}
+
+.card-produto .descricao {
+  font-size: 0.85rem;
+  color: #6b554e;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.preco-box {
+  text-align: right;
+  border-top: 1px solid #f7ece1;
+  padding-top: 12px;
+}
+
+.preco {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #3b1e19;
+}
+
+/* Card da API CEP */
+.card-busca {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid #f2e3d5;
+  box-shadow: 0 4px 20px rgba(59, 30, 25, 0.06);
+  max-width: 650px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.busca-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.busca-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: #3b1e19;
+}
+
+.busca-header p {
+  font-size: 0.9rem;
+  color: #6b554e;
+}
+
+.form-cep {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form-cep input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid #f2e3d5;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  color: #3b1e19;
+  background-color: #fdf8f5;
+}
+
+.form-cep input:focus {
+  border-color: #d89b75;
+}
+
+.form-cep button {
+  padding: 14px 28px;
+  background-color: #3b1e19;
+  color: #d89b75;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-cep button:hover {
+  background-color: #d89b75;
+  color: #3b1e19;
+}
+
+.resultado {
+  background: #fdf8f5;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px dashed #d89b75;
+}
+
+.instrucao {
+  color: #6b554e;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.erro {
+  color: #b71c1c;
+  font-weight: 600;
+  text-align: center;
+}
+
+.endereco-info h4 {
+  color: #3b1e19;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.endereco-info p {
+  font-size: 0.9rem;
+  color: #3b1e19;
+  margin-bottom: 4px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #3b1e19;
+  color: #d89b75;
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  margin-top: 60px;
+}

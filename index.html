@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majestoso Doce - Palhas Italianas Premium</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra do Topo -->
+  <div class="top-bar">
+    ✨ Frete Especial para a Sua Região • Palhas Italianas Feitas à Mão ✨
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="header-container">
+      <div class="brand">
+        <img src="logo.jpeg" alt="Logo Majestoso Doce" class="logo-img">
+        <div>
+          <h1 class="logo-texto">MAJESTOSO DOCE</h1>
+          <span class="sub-brand">PALHAS ITALIANAS ARTESANAIS</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner de Destaque (Hero) -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>O Verdadeiro Sabor da Palha Italiana Gourmet</h2>
+      <p>Receita artesanal exclusiva, ingredientes nobres e crocância inesquecível.</p>
+      <a href="#produtos" class="btn-hero">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <main class="main-container">
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos-section">
+      <div class="section-title">
+        <h2>Mais Vendidos</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="grid-produtos">
+        
+        <div class="card-produto">
+          <span class="badge">Destaque</span>
+          <div class="imagem-box">🍫</div>
+          <h3>Palha Tradicional</h3>
+          <p class="descricao">Brigadeiro gourmet de chocolate 50% cacau com biscoito artesanal super crocante.</p>
+          <div class="preco-box">
+            <span class="preco">R$ 8,50</span>
+          </div>
+        </div>
+
+        <div class="card-produto">
+          <span class="badge badge-popular">Mais Pedido</span>
+          <div class="imagem-box">🥛</div>
+          <h3>Ninho com Nutella</h3>
+          <p class="descricao">Massa aveludada de Leite Ninho recheada com generosa camada de Nutella pura.</p>
+          <div class="preco-box">
+            <span class="preco">R$ 10,00</span>
+          </div>
+        </div>
+
+        <div class="card-produto">
+          <div class="imagem-box">🍓</div>
+          <h3>Bicho de Pé</h3>
+          <p class="descricao">Brigadeiro cremoso de morango artesanal finalizado com biscoitos selecionados.</p>
+          <div class="preco-box">
+            <span class="preco">R$ 8,50</span>
+          </div>
+        </div>
+
+        <div class="card-produto">
+          <span class="badge">Novo</span>
+          <div class="imagem-box">✨</div>
+          <h3>Pistache Premium</h3>
+          <p class="descricao">Brigadeiro de pistache 100% puro combinado com pedaços crocantes e toque suave.</p>
+          <div class="preco-box">
+            <span class="preco">R$ 12,00</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seção da API de Consulta de CEP -->
+    <section class="card-busca">
+      <div class="busca-header">
+        <h2>🚚 Calcule o Frete para sua Região</h2>
+        <p>Insira seu CEP abaixo para confirmar a taxa e entrega dos doces fresquinhos:</p>
+      </div>
+
+      <form id="form-cep" class="form-cep">
+        <input 
+          type="text" 
+          id="campo-cep" 
+          placeholder="Digite seu CEP (ex: 01001000)" 
+          maxlength="8"
+          required
+        >
+        <button type="submit" id="botao-buscar">Consultar</button>
+      </form>
+
+      <div id="resultado" class="resultado">
+        <p class="instrucao">Digite o CEP acima para checar o endereço de entrega.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Majestoso Doce • Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
