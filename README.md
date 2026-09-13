@@ -14,4 +14,4 @@ Projeto web desenvolvido para a confeitaria artesanal **Majestoso Doce**, especi
 - Formulário interativo com validação e busca automática de endereços por CEP.
 
 ## ✒️ Autor
-Desenvolvido para fins acadêmicos e comerciais por **Majestoso Doce**.
+Desenvolvido para fins acadêmicos e comerciais por **Majestoso Doce**- Marcelo Ferreira-22609724
